@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <% include ../views/partials/header   %>
+    </header>
+
+
+<form action="/compose"  method="POST">
+
+    <div class="form-group">
+<label for="textInput">Title:</label>
+<input type="text" name="textInput" class="form-control"><br/>
+<br/>
+<label for="textInput">Title</label>
+<label for="postTextarea">Post</label>
+<textarea name="postTextarea" class="form-control"></textarea>
+</div>
+<button class="btn btn-primary" type="submit" name="button">Publish</button>
+
+</form>
+</body>
+</html>
